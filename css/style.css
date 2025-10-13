@@ -1,1 +1,286 @@
-/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+/* ---------------------------
+   Reset defaults
+--------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------------
+   Typography
+--------------------------- */
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #212121;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #212121;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p, li, label, input, figcaption, legend {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* ---------------------------
+   Header
+--------------------------- */
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* ---------------------------
+   Navigation tabs
+--------------------------- */
+.nav-tabs {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-tabs li a {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background-color: #f3f4f6;
+  color: #212121;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-tabs li a:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-tabs li a.active {
+  background-color: #FFA726;
+  color: #fff;
+}
+
+/* ---------------------------
+   Hero section
+--------------------------- */
+.hero {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero article {
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* ---------------------------
+   Buttons
+--------------------------- */
+.btn {
+  display: inline-block;
+  background-color: #FFA726;
+  color: #212121;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ---------------------------
+   Content sections
+--------------------------- */
+.content {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.content.light {
+  background-color: #fff;
+}
+
+.content.alt {
+  background-color: #f3f4f6;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+}
+
+.content figure {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.content figure img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* ---------------------------
+   Reviews section
+--------------------------- */
+.reviews {
+  background-color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.review-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.review-list li {
+  background-color: #f3f4f6;
+  border-radius: 16px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.review-list blockquote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------------
+   Form section
+--------------------------- */
+form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+legend {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #FFA726;
+  color: #212121;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.85;
+}
+
+/* ---------------------------
+   Footer
+--------------------------- */
+footer {
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ---------------------------
+   Responsive
+--------------------------- */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
