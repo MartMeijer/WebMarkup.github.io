@@ -1,130 +1,304 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Gezond eten na 22</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gezond eten na 22</title>
 
-  <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- External stylesheet link -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="img/favicon.png" />
-</head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <section class="header-container">
+        <a href="index.html">
+          <figure class="logo">
+            <img
+              src="img/logo.png"
+              alt="Gezond eten na 22 logo"
+              title="Gezond eten na 22"
+            />
+          </figure>
+        </a>
+        <nav aria-label="Hoofdmenu">
+          <ul class="nav-tabs">
+            <li><a href="index.html" class="active">Home Page</a></li>
+            <li><a href="#page2">Restaurants die nú open zijn</a></li>
+            <li><a href="#page3">Waarom gezond eten?</a></li>
+            <li><a href="#page4">Voedingsadvies voor nachtwerkers</a></li>
+            <li><a href="#page5">Tips & Ervaringen</a></li>
+            <li><a href="#page6">Contact & Feedback</a></li>
+          </ul>
+        </nav>
 
- <header>
-  <section class="header-container">
-    <figure class="logo">
-      <img src="img/logo.png" alt="Gezond eten na 22 logo" title="Gezond eten na 22" />
-      <figcaption class="visually-hidden">Gezond eten na 22</figcaption>
-    </figure>
+        <!-- Checkbox hack for hamburger menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-menu">
+          <img src="img/Menu.svg" alt="Menu" />
+        </label>
 
-    <nav aria-label="Hoofdmenu">
-      <ul class="nav-tabs">
-        <li><a href="#home" class="active">Home Page</a></li>
-        <li><a href="#page2">Page 2</a></li>
-        <li><a href="#page3">Page 3</a></li>
-        <li><a href="#page4">Page 4</a></li>
-        <li><a href="#page5">Page 5</a></li>
-        <li><a href="#page6">Page 6</a></li>
+        <!-- Mobile menu INSIDE header-container -->
+        <nav class="mobile-nav" aria-label="Mobiel menu">
+          <ul>
+            <li><a href="index.html" class="active">Home Page</a></li>
+            <li><a href="#page2">Restaurants die nú open zijn</a></li>
+            <li><a href="#page3">Waarom gezond eten?</a></li>
+            <li><a href="#page4">Voedingsadvies voor nachtwerkers</a></li>
+            <li><a href="#page5">Tips & Ervaringen</a></li>
+            <li><a href="#page6">Contact & Feedback</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Mobile menu right after header -->
+    <nav class="mobile-nav" aria-label="Mobiel menu">
+      <ul>
+        <li><a href="index.html" class="active">Home Page</a></li>
+        <li><a href="#page2">Restaurants die nú open zijn</a></li>
+        <li><a href="#page3">Waarom gezond eten?</a></li>
+        <li><a href="#page4">Voedingsadvies voor nachtwerkers</a></li>
+        <li><a href="#page5">Tips & Ervaringen</a></li>
+        <li><a href="#page6">Contact & Feedback</a></li>
       </ul>
     </nav>
-  </section>
-</header>
 
-
-  <main>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <article>
-        <h1>Gezond eten na 22</h1>
-        <p>Informatie en voorbeelden voor iedereen die 's nachts werkt</p>
-        <a href="#contact" class="btn">Zoek gezonde restaurants in de buurt</a>
-      </article>
-      <figure>
-        <img src="img/hero.jpg" alt="Gezond eten illustratie" title="Gezonde voeding" />
-        <figcaption class="visually-hidden">Gezonde voeding na 22</figcaption>
-      </figure>
-    </section>
-
-    <!-- Section 1 -->
-    <section class="content light">
-      <article>
-        <h2>Waarom gezond eten?</h2>
-        <p><strong>Gezonde voeding</strong> is cruciaal, vooral voor mensen die 's nachts werken. 
-          Het helpt bij concentratie, energie en herstel. <em>Voeding is brandstof voor je lichaam.</em></p>
-        <figure>
-          <img src="img/salad.jpg" alt="Gezonde salade" title="Gezonde salade" />
-          <figcaption>Een evenwichtige salade is een perfecte keuze voor late eters.</figcaption>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <figure class="mobile-deco">
+          <img
+            src="img/Hero Newsletter.svg"
+            alt="Gezond eten illustratie"
+            title="Gezonde voeding"
+          />
         </figure>
-        <a href="#contact" class="btn">Lees voedingsadvies</a>
-      </article>
-    </section>
 
-    <!-- Section 2 -->
-    <section class="content alt">
-      <article>
-        <h2>Gezonde alternatieven</h2>
-        <p>Ontdek gezonde alternatieven voor je favoriete gerechten, zodat je nog steeds kunt genieten 
-          zonder concessies te doen aan je gezondheid.</p>
+        <article>
+          <h1>Gezond eten na 22</h1>
+          <p>Informatie en voorbeelden voor iedereen die 's nachts werkt.</p>
+          <a href="#contact" class="btn"
+            >Zoek gezonde restaurants in de buurt</a
+          >
+        </article>
         <figure>
-          <img src="img/healthy-food.jpg" alt="Gezonde maaltijd" title="Gezonde maaltijd" />
-          <figcaption>Gezonde alternatieven zijn gemakkelijk en lekker.</figcaption>
+          <img
+            src="img/sitehero.svg"
+            alt="Gezond eten illustratie"
+            title="Gezonde voeding"
+          />
         </figure>
-        <a href="#contact" class="btn">Ontdek gezonde alternatieven</a>
-      </article>
-    </section>
+      </section>
 
-    <!-- Review Section -->
-    <section class="reviews">
-      <h2>Tips &amp; Ervaringen</h2>
-      <ul class="review-list">
-        <li>
-          <blockquote>
-            &quot;Sinds ik gezonder eet na mijn late diensten, voel ik me veel energieker.&quot;
-          </blockquote>
-          <p><strong>Marieke</strong> – Nachtverpleegkundige</p>
-        </li>
-        <li>
-          <blockquote>
-            &quot;Kleine aanpassingen maken een groot verschil in hoe ik me voel.&quot;
-          </blockquote>
-          <p><strong>Jan</strong> – Taxichauffeur</p>
-        </li>
-        <li>
-          <blockquote>
-            &quot;De tips op deze site hebben mijn eetgewoonten echt verbeterd.&quot;
-          </blockquote>
-          <p><strong>Lisa</strong> – Magazijnmedewerker</p>
-        </li>
-      </ul>
-      <a href="#contact" class="btn">Lees meer ervaringen</a>
-    </section>
+      <!-- Section 1 -->
+      <section class="content white">
+        <figure>
+          <img
+            src="img/healthyfood.svg"
+            alt="Gezonde salade"
+            title="Gezonde salade"
+          />
+        </figure>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Abonneer op onze nieuwsbrief</legend>
-          <label for="email">E-mailadres:</label>
-          <input type="email" id="email" name="email" placeholder="jouwnaam@example.com" required />
-          <input type="submit" value="Abonneer" />
-        </fieldset>
-      </form>
-    </section>
+        <article>
+          <h2>Slimme keuzes na sluitingstijd</h2>
+          <p>
+            Veel fastfoodketens zijn tot laat open, maar gezonde alternatieven
+            bestaan óók. Door bewust te kiezen, ondersteun je je lichaam tijdens
+            de nacht. Ontdek waarom het belangrijk is om slimme keuzes te maken
+            en hoe je dit in de praktijk toepast.
+          </p>
+          <p>
+            ’s Nachts is je spijsvertering minder actief. Zware maaltijden,
+            zoals friet of pizza, blijven langer in je maag en kunnen leiden tot
+            een opgeblazen gevoel, maagklachten en vermoeidheid. Dat is extra
+            vervelend als je nog moet doorwerken of juist wilt slapen na je
+            shift.
+          </p>
+          <p>
+            Gezondere keuzes zoals wraps, salades of lichte soepen geven energie
+            zonder dat je suf wordt. Ze stabiliseren je bloedsuikerspiegel en
+            verminderen de kans op een “energiecrash”. Zo blijf je alerter en
+            fitter, ook tijdens de nacht.
+          </p>
+          <a href="#contact" class="btn">Lees voedingsadvies</a>
+        </article>
+      </section>
 
-  </main>
+      <!-- Section 2 -->
+      <section class="content green reverse">
+        <figure>
+          <img
+            src="img/Panel Image Content.svg"
+            alt="Gezonde maaltijd"
+            title="Gezonde maaltijd"
+          />
+        </figure>
 
-  <footer>
-    <p>&copy; 2025 Gezond eten na 22 &reg; &amp; &euro;. Alle rechten voorbehouden.</p>
-  </footer>
+        <article>
+          <h2>Voedingsadvies voor nachtwerkers</h2>
+          <p>
+            Nachtwerk verstoort je biologische klok. Door bewust te eten kun je
+            veel klachten voorkomen. Goede voeding helpt je energiek, alert en
+            gezond te blijven – ook wanneer je ritme anders loopt dan de rest
+            van de wereld.
+          </p>
+          <p>
+            Ons lichaam is van nature ingesteld op eten en verteren overdag. ’s
+            Nachts vertraagt de spijsvertering en reageert je lichaam anders op
+            voeding. Dit maakt je gevoeliger voor energie-dips, vetopslag en
+            schommelingen in je bloedsuiker.
+          </p>
+          <p>
+            Wanneer je ’s nachts zwaar of vet eet, is de kans groter dat je last
+            krijgt van maagklachten en vermoeidheid. Slimme, lichte keuzes
+            zorgen ervoor dat je lichaam minder hard hoeft te werken en je
+            langer fit blijft.
+          </p>
+          <a href="#contact" class="btn">Ontdek gezonde alternatieven</a>
+        </article>
+      </section>
 
-</body>
+      <!-- Section 3 -->
+      <section class="reviews">
+        <h2>Tips &amp; Ervaringen</h2>
+        <ul class="review-list">
+          <li>
+            <blockquote>
+              &quot;<b
+                >Gezond eten heeft me letterlijk een rustigere nacht
+                gebracht.</b
+              >&quot;
+            </blockquote>
+            <div class="review-author">
+              <img src="img/Frank.svg" alt="Frank" />
+              <p><strong>Frank</strong> – Taxichauffeur</p>
+            </div>
+          </li>
+          <li>
+            <blockquote>
+              &quot;<b
+                >Gezond eten is voor mij een vorm van zelfzorg geworden.</b
+              >&quot;
+            </blockquote>
+            <div class="review-author">
+              <img src="img/Kim.svg" alt="Kim" />
+              <p><strong>Kim</strong> – Verpleegkundige</p>
+            </div>
+          </li>
+          <li>
+            <blockquote>
+              &quot;<b
+                >Het voelt gewoon beter om de dag af te sluiten met iets wat
+                goed voor je is.</b
+              >&quot;
+            </blockquote>
+            <div class="review-author">
+              <img src="img/Carlo.svg" alt="Carlo" />
+              <p><strong>Carlo</strong> – Horecamedewerker</p>
+            </div>
+          </li>
+        </ul>
+        <a href="#contact" class="btn">Lees meer ervaringen</a>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="content F5F5F5">
+        <figure>
+          <img src="img/Contact us.svg" alt="Contact us" title="Contact us" />
+        </figure>
+
+        <article>
+          <h2>Jouw feedback is belangrijk!</h2>
+          <p>
+            Heb je vragen over gezonde voeding, wil je jouw ervaring delen of
+            mis je bepaalde informatie op onze site?
+          </p>
+          <p>
+            Neem gerust contact met ons op. We waarderen jouw feedback en
+            gebruiken die graag om onze content te verbeteren.
+          </p>
+          <a href="#contact" class="btn">Contact</a>
+        </article>
+      </section>
+
+      <!-- Contact Section
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Abonneer op onze nieuwsbrief</legend>
+            <label for="email">E-mailadres:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="jouwnaam@example.com"
+              required
+            />
+            <input type="submit" value="Abonneer" />
+          </fieldset>
+        </form>
+      </section> -->
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <figure class="footer-logo">
+          <a href="index.html">
+            <img
+              src="img/logo.png"
+              alt="Gezond eten na 22 logo"
+              title="Gezond eten na 22"
+              class="img-button"
+            />
+          </a>
+        </figure>
+        <p><b> &copy; Gezond Eten Na 22,</b> All Rights Reserved</p>
+
+        <div class="socials">
+          <a href="https://x.com/">
+            <img src="img/X Logo.svg" alt="X" title="X" class="img-button" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img
+              src="img/Logo Instagram.svg"
+              alt="Instagram"
+              title="Instagram"
+              class="img-button"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/">
+            <img
+              src="img/Logo YouTube.svg"
+              alt="Youtube"
+              title="Youtube"
+              class="img-button"
+            />
+          </a>
+
+          <a href="https://www.linkedin.com/">
+            <img
+              src="img/LinkedIn.svg"
+              alt="Linkedin"
+              title="Linkedin"
+              class="img-button"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

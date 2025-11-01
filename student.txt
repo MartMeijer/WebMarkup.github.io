@@ -1,5 +1,5 @@
 Student name: Mart Meijer
 Student number: 644785
 Student class: HAINF25VT1B
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+GitHub Repository: https://github.com/MartMeijer/WebMarkup.github.io
+GitHub Pages URL: https://martmeijer.github.io/WebMarkup.github.io/
