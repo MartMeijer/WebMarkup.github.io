@@ -3,6 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Mart Meijer" />
+    <meta
+      name="description"
+      content="Gezond eten na 22 biedt informatie en tips voor nachtwerkers over gezonde voeding. Ontdek restaurants en voedingsadvies voor een gezonder nachtleven."
+    />
+    <meta
+      name="keywords"
+      content="gezond eten, nachtwerkers, voeding, restaurants, gezondheid"
+    />
     <title>Gezond eten na 22</title>
 
     <!-- Google Fonts -->
@@ -19,6 +28,15 @@
   </head>
 
   <body>
+    <!-- Cookies Message -->
+    <input type="checkbox" id="cookies-toggle" class="cookies-toggle" />
+    <aside class="cookies-message">
+      <div class="cookies-content">
+        We gebruiken cookies om uw ervaring te verbeteren.
+        <label for="cookies-toggle" class="cookies-close">Sluiten</label>
+      </div>
+    </aside>
+
     <header>
       <section class="header-container">
         <a href="index.html">
@@ -33,45 +51,37 @@
         <nav aria-label="Hoofdmenu">
           <ul class="nav-tabs">
             <li><a href="index.html" class="active">Home Page</a></li>
-            <li><a href="#page2">Restaurants die nú open zijn</a></li>
-            <li><a href="#page3">Waarom gezond eten?</a></li>
-            <li><a href="#page4">Voedingsadvies voor nachtwerkers</a></li>
-            <li><a href="#page5">Tips & Ervaringen</a></li>
-            <li><a href="#page6">Contact & Feedback</a></li>
+            <li><a href="restaurants.html">Restaurants die nú open zijn</a></li>
+            <li><a href="gezondeten.html">Waarom gezond eten?</a></li>
+            <li>
+              <a href="voedingsadvies.html">Voedingsadvies voor nachtwerkers</a>
+            </li>
+            <li><a href="tipservaringen.html">Tips &amp; Ervaringen</a></li>
+            <li><a href="contactfeedback.html">Contact &amp; Feedback</a></li>
           </ul>
         </nav>
 
-        <!-- Checkbox hack for hamburger menu -->
+        <!-- Hamburger menu -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
         <label for="menu-toggle" class="hamburger-menu">
           <img src="img/Menu.svg" alt="Menu" />
         </label>
 
-        <!-- Mobile menu INSIDE header-container -->
+        <!-- Mobile menu -->
         <nav class="mobile-nav" aria-label="Mobiel menu">
           <ul>
             <li><a href="index.html" class="active">Home Page</a></li>
-            <li><a href="#page2">Restaurants die nú open zijn</a></li>
-            <li><a href="#page3">Waarom gezond eten?</a></li>
-            <li><a href="#page4">Voedingsadvies voor nachtwerkers</a></li>
-            <li><a href="#page5">Tips & Ervaringen</a></li>
-            <li><a href="#page6">Contact & Feedback</a></li>
+            <li><a href="restaurants.html">Restaurants die nú open zijn</a></li>
+            <li><a href="gezondeten.html">Waarom gezond eten?</a></li>
+            <li>
+              <a href="voedingsadvies.html">Voedingsadvies voor nachtwerkers</a>
+            </li>
+            <li><a href="tipservaringen.html">Tips &amp; Ervaringen</a></li>
+            <li><a href="contactfeedback.html">Contact &amp; Feedback</a></li>
           </ul>
         </nav>
       </section>
     </header>
-
-    <!-- Mobile menu right after header -->
-    <nav class="mobile-nav" aria-label="Mobiel menu">
-      <ul>
-        <li><a href="index.html" class="active">Home Page</a></li>
-        <li><a href="#page2">Restaurants die nú open zijn</a></li>
-        <li><a href="#page3">Waarom gezond eten?</a></li>
-        <li><a href="#page4">Voedingsadvies voor nachtwerkers</a></li>
-        <li><a href="#page5">Tips & Ervaringen</a></li>
-        <li><a href="#page6">Contact & Feedback</a></li>
-      </ul>
-    </nav>
 
     <main>
       <!-- Hero Section -->
@@ -87,7 +97,7 @@
         <article>
           <h1>Gezond eten na 22</h1>
           <p>Informatie en voorbeelden voor iedereen die 's nachts werkt.</p>
-          <a href="#contact" class="btn"
+          <a href="restaurants.html" class="btn"
             >Zoek gezonde restaurants in de buurt</a
           >
         </article>
@@ -112,26 +122,26 @@
 
         <article>
           <h2>Slimme keuzes na sluitingstijd</h2>
-          <p>
+           <p class="spaced">
             Veel fastfoodketens zijn tot laat open, maar gezonde alternatieven
             bestaan óók. Door bewust te kiezen, ondersteun je je lichaam tijdens
-            de nacht. Ontdek waarom het belangrijk is om slimme keuzes te maken
-            en hoe je dit in de praktijk toepast.
+            de nacht. Ontdek waarom het <em>belangrijk</em> is om slimme keuzes
+            te maken en hoe je dit in de praktijk toepast.
           </p>
-          <p>
-            ’s Nachts is je spijsvertering minder actief. Zware maaltijden,
+         <p class="spaced">
+            's Nachts is je spijsvertering minder actief. Zware maaltijden,
             zoals friet of pizza, blijven langer in je maag en kunnen leiden tot
             een opgeblazen gevoel, maagklachten en vermoeidheid. Dat is extra
             vervelend als je nog moet doorwerken of juist wilt slapen na je
             shift.
           </p>
-          <p>
+           <p class="spaced">
             Gezondere keuzes zoals wraps, salades of lichte soepen geven energie
             zonder dat je suf wordt. Ze stabiliseren je bloedsuikerspiegel en
-            verminderen de kans op een “energiecrash”. Zo blijf je alerter en
-            fitter, ook tijdens de nacht.
+            verminderen de kans op een &quot;energiecrash&quot;. Zo blijf je
+            alerter en fitter, ook tijdens de nacht.
           </p>
-          <a href="#contact" class="btn">Lees voedingsadvies</a>
+          <a href="gezondeten.html" class="btn">Lees voedingsadvies</a>
         </article>
       </section>
 
@@ -139,33 +149,33 @@
       <section class="content green reverse">
         <figure>
           <img
-            src="img/Panel Image Content.svg"
-            alt="Gezonde maaltijd"
-            title="Gezonde maaltijd"
+            src="img/Nurse.svg"
+            alt="Gezonde nachtwerkster"
+            title="Gezonde nachtwerkster"
           />
         </figure>
 
         <article>
           <h2>Voedingsadvies voor nachtwerkers</h2>
-          <p>
+           <p class="spaced">
             Nachtwerk verstoort je biologische klok. Door bewust te eten kun je
             veel klachten voorkomen. Goede voeding helpt je energiek, alert en
             gezond te blijven – ook wanneer je ritme anders loopt dan de rest
             van de wereld.
           </p>
-          <p>
-            Ons lichaam is van nature ingesteld op eten en verteren overdag. ’s
+           <p class="spaced">
+            Ons lichaam is van nature ingesteld op eten en verteren overdag. 's
             Nachts vertraagt de spijsvertering en reageert je lichaam anders op
             voeding. Dit maakt je gevoeliger voor energie-dips, vetopslag en
             schommelingen in je bloedsuiker.
           </p>
-          <p>
-            Wanneer je ’s nachts zwaar of vet eet, is de kans groter dat je last
+          <p class="spaced">
+            Wanneer je 's nachts zwaar of vet eet, is de kans groter dat je last
             krijgt van maagklachten en vermoeidheid. Slimme, lichte keuzes
             zorgen ervoor dat je lichaam minder hard hoeft te werken en je
             langer fit blijft.
           </p>
-          <a href="#contact" class="btn">Ontdek gezonde alternatieven</a>
+          <a href="voedingsadvies.html" class="btn">Ontdek gezonde alternatieven</a>
         </article>
       </section>
 
@@ -220,11 +230,11 @@
 
         <article>
           <h2>Jouw feedback is belangrijk!</h2>
-          <p>
+           <p class="spaced">
             Heb je vragen over gezonde voeding, wil je jouw ervaring delen of
             mis je bepaalde informatie op onze site?
           </p>
-          <p>
+          <p class="spaced">
             Neem gerust contact met ons op. We waarderen jouw feedback en
             gebruiken die graag om onze content te verbeteren.
           </p>
@@ -264,7 +274,7 @@
             />
           </a>
         </figure>
-        <p><b> &copy; Gezond Eten Na 22,</b> All Rights Reserved</p>
+        <p><b>&copy; Gezond Eten Na 22,</b> All Rights Reserved</p>
 
         <div class="socials">
           <a href="https://x.com/">

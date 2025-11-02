@@ -15,6 +15,7 @@ body {
   color: #212121;
   background-color: #f8f9fa;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1,
@@ -26,10 +27,12 @@ h6 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #212121;
+  letter-spacing: 0.02em; /* Added letter-spacing */
 }
 
 h1 {
   font-size: 3rem;
+  letter-spacing: 0.05em; /* Added letter-spacing */
 }
 
 h2 {
@@ -47,14 +50,72 @@ legend {
   font-weight: 400;
 }
 
+p {
+  word-spacing: 0.1em; /* Added word-spacing */
+}
+
+/* First paragraph gets text-indent */
+article > p:first-of-type {
+  text-indent: 0em; /* Added text-indent */
+}
+
+/* ---------------------------
+   Cookies Message (aside)
+--------------------------- */
+.cookies-toggle {
+  display: none;
+}
+
+.cookies-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  z-index: 9999;
+  border-style: double;
+  border-width: 3px;
+  border-color: #ffa726;
+  transition: transform 0.3s ease;
+}
+
+/* Hide cookies message when checkbox is checked */
+.cookies-toggle:checked + .cookies-message {
+  transform: translateY(100%);
+}
+
+.cookies-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cookies-close {
+  color: #ffa726;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cookies-close:hover {
+  color: #e68a00;
+}
+
 /* ---------------------------
    Header
 --------------------------- */
 header {
   background-color: #fff;
-  border-bottom: 2px solid #ddd;
+  border: 2px solid #ddd;
+  border-style: double;
   padding: 0.5rem 1rem;
   position: relative;
+  overflow-x: hidden;
 }
 
 .header-container {
@@ -98,6 +159,7 @@ header {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
+  letter-spacing: 0.01em; /* Added letter-spacing */
 }
 
 .nav-tabs li a:hover {
@@ -134,8 +196,8 @@ header {
 --------------------------- */
 .mobile-nav {
   display: none;
-  position: fixed; /* Change from absolute to fixed */
-  top: 115px; /* Adjust based on your header height */
+  position: fixed;
+  top: 115px;
   right: -100%;
   width: 280px;
   max-height: 400px;
@@ -167,7 +229,8 @@ header {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s;
-  border-bottom: 1px solid #f0f0f0;
+  border: 1px solid #f0f0f0;
+  border-style: double;
 }
 
 .mobile-nav ul li a:hover {
@@ -193,7 +256,6 @@ header {
   text-align: left;
 }
 
-/* Hide mobile decoration on desktop */
 .hero .mobile-deco {
   display: none;
 }
@@ -214,6 +276,39 @@ header {
   border-radius: 0;
 }
 
+
+/* ---------------------------
+   Hero section alt
+--------------------------- */
+.hero-alt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: #f5f5f5;
+  color: #212121;
+  padding: 0 32rem 0 0;
+  gap: 0;
+  text-align: left;
+}
+
+.hero-alt .mobile-deco {
+  display: none;
+}
+
+.hero-alt figure {
+  justify-self: start;
+  margin: 0;
+}
+
+.hero-alt figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+
+
 /* ---------------------------
    Buttons
 --------------------------- */
@@ -227,6 +322,7 @@ header {
   text-decoration: none;
   margin-top: 1rem;
   transition: background-color 0.3s;
+  letter-spacing: 0.02em; /* Added letter-spacing */
 }
 
 .btn:hover {
@@ -244,6 +340,10 @@ header {
   text-align: left;
 }
 
+p.spaced {
+  margin-bottom: 1.5rem; /* Adjust the size as needed */
+}
+
 .content.white {
   background-color: #fff;
 }
@@ -259,6 +359,18 @@ header {
 
 .content article {
   padding: 3rem 6rem;
+}
+
+.content-noimg article {
+ text-align: left;
+padding: 6rem 6rem;
+}
+
+article ul {
+  list-style-position: inside; /* Makes bullets align with text */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 0; /* Remove default padding */
 }
 
 .content figure {
@@ -386,7 +498,8 @@ footer {
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
-  border-top: 2px solid #ddd;
+  border: 2px solid #ddd;
+  border-style: double;
 }
 
 .footer-container {
@@ -437,14 +550,15 @@ footer p {
     display: block;
   }
 
+  .hero-alt,
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 3rem 2rem;
-    position: relative; /* Add this */
+    position: relative;
   }
 
-  /* Show mobile decoration on mobile - place it behind */
+  .hero-alt .mobile-deco,
   .hero .mobile-deco {
     display: block;
     position: absolute;
@@ -455,24 +569,26 @@ footer p {
     z-index: 0;
   }
 
+  .hero-alt .mobile-deco img,
   .hero .mobile-deco img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* or contain, depending on your preference */
-   
+    object-fit: cover;
   }
 
-  /* Make article appear above the decoration */
+  .hero-alt article,
   .hero article {
     position: relative;
     z-index: 1;
   }
 
+  .hero-alt figure,
   .hero figure {
     justify-self: center;
   }
 
+  .hero-alt figure img,
   .hero figure img {
     display: none;
   }
