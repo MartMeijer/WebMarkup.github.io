@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Mart Meijer" />
+    <meta
+      name="description"
+      content="Gezond eten na 22 biedt informatie en tips voor nachtwerkers over gezonde voeding. Ontdek restaurants en voedingsadvies voor een gezonder nachtleven."
+    />
+    <meta
+      name="keywords"
+      content="gezond eten, nachtwerkers, voeding, restaurants, gezondheid"
+    />
+    <title>Gezond eten na 22</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
+
+  <body>
+    <!-- Form State -->
+    <input type="radio" id="form-success" name="form-state" />
+
+    <!-- Header -->
+    <header>
+      <section class="header-container">
+        <a href="index.html">
+          <figure class="logo">
+            <img
+              src="img/logo.png"
+              alt="Gezond eten na 22 logo"
+              title="Gezond eten na 22"
+            />
+          </figure>
+        </a>
+        <nav aria-label="Hoofdmenu">
+          <ul class="nav-tabs">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="restaurants.html">Restaurants die nú open zijn</a></li>
+            <li><a href="gezondeten.html">Waarom gezond eten?</a></li>
+            <li>
+              <a href="voedingsadvies.html">Voedingsadvies voor nachtwerkers</a>
+            </li>
+            <li><a href="tipservaringen.html">Tips &amp; Ervaringen</a></li>
+            <li>
+              <a href="contactfeedback.html" class="active"
+                >Contact &amp; Feedback</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-menu">
+          <img src="img/Menu.svg" alt="Menu" />
+        </label>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav" aria-label="Mobiel menu">
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="restaurants.html">Restaurants die nú open zijn</a></li>
+            <li><a href="gezondeten.html">Waarom gezond eten?</a></li>
+            <li>
+              <a href="voedingsadvies.html">Voedingsadvies voor nachtwerkers</a>
+            </li>
+            <li><a href="tipservaringen.html">Tips &amp; Ervaringen</a></li>
+            <li>
+              <a href="contactfeedback.html" class="active"
+                >Contact &amp; Feedback</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero-alt" id="home">
+        <figure class="mobile-deco">
+          <img
+            src="img/Hero Newsletter.svg"
+            alt="Gezond eten illustratie"
+            title="Gezonde voeding"
+          />
+        </figure>
+        <figure>
+          <img
+            src="img/Deco1.svg"
+            alt="Gezond eten illustratie"
+            title="Gezonde voeding"
+          />
+        </figure>
+        <article>
+          <h1>
+            <span class="default-text">Contact & Feedback</span>
+            <span class="success-text">Bedankt voor het bericht!</span>
+          </h1>
+          <p>Jouw ervaring telt.</p>
+        </article>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact">
+        <div class="contact-container">
+          <form action="#" method="post">
+            <fieldset>
+              <label for="naam">Naam*</label>
+              <input
+                type="text"
+                id="naam"
+                name="naam"
+                placeholder="John Doe"
+                required
+              />
+              <label for="email">E-mailadres*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="johndoe@jouwemail.com"
+                required
+              />
+              <label for="telefoon">Telefoonnummer (optioneel)</label>
+              <input
+                type="tel"
+                id="telefoon"
+                name="telefoon"
+                placeholder="+31 6 58585858"
+              />
+              <label for="onderwerp">Onderwerp*</label>
+              <input
+                type="text"
+                id="onderwerp"
+                name="onderwerp"
+                placeholder="Uw onderwerp"
+                required
+              />
+              <label for="bericht">Bericht*</label>
+              <textarea
+                id="bericht"
+                name="bericht"
+                placeholder="Type uw bericht hier..."
+                required
+              ></textarea>
+
+              <!-- Submit -->
+              <label for="form-success" class="submit-label">
+                <span>Verstuur</span>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+
+        <img src="img/socials.svg" alt="Socials" class="contact-image" />
+      </section>
+
+      <!-- Success Button -->
+      <section class="success-button">
+        <a href="index.html" class="btn">Ga terug naar Home Page</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <figure class="footer-logo">
+          <a href="index.html">
+            <img
+              src="img/logo.png"
+              alt="Gezond eten na 22 logo"
+              title="Gezond eten na 22"
+              class="img-button"
+            />
+          </a>
+        </figure>
+        <p><b>&copy; Gezond Eten Na 22,</b> All Rights Reserved</p>
+
+        <div class="socials">
+          <a href="https://x.com/">
+            <img src="img/X Logo.svg" alt="X" title="X" class="img-button" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img
+              src="img/Logo Instagram.svg"
+              alt="Instagram"
+              title="Instagram"
+              class="img-button"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/">
+            <img
+              src="img/Logo YouTube.svg"
+              alt="Youtube"
+              title="Youtube"
+              class="img-button"
+            />
+          </a>
+
+          <a href="https://www.linkedin.com/">
+            <img
+              src="img/LinkedIn.svg"
+              alt="Linkedin"
+              title="Linkedin"
+              class="img-button"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

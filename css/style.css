@@ -1,15 +1,11 @@
-/* ---------------------------
-   Reset defaults
---------------------------- */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ---------------------------
-   Typography
---------------------------- */
+/* Typography */
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: #212121;
@@ -27,12 +23,12 @@ h6 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #212121;
-  letter-spacing: 0.02em; /* Added letter-spacing */
+  letter-spacing: 0.02em;
 }
 
 h1 {
   font-size: 3rem;
-  letter-spacing: 0.05em; /* Added letter-spacing */
+  letter-spacing: 0.05em;
 }
 
 h2 {
@@ -51,17 +47,14 @@ legend {
 }
 
 p {
-  word-spacing: 0.1em; /* Added word-spacing */
+  word-spacing: 0.1em;
 }
 
-/* First paragraph gets text-indent */
 article > p:first-of-type {
-  text-indent: 0em; /* Added text-indent */
+  text-indent: 0em;
 }
 
-/* ---------------------------
-   Cookies Message (aside)
---------------------------- */
+/* Cookies */
 .cookies-toggle {
   display: none;
 }
@@ -82,7 +75,6 @@ article > p:first-of-type {
   transition: transform 0.3s ease;
 }
 
-/* Hide cookies message when checkbox is checked */
 .cookies-toggle:checked + .cookies-message {
   transform: translateY(100%);
 }
@@ -106,9 +98,7 @@ article > p:first-of-type {
   color: #e68a00;
 }
 
-/* ---------------------------
-   Header
---------------------------- */
+/* Header */
 header {
   background-color: #fff;
   border: 2px solid #ddd;
@@ -131,9 +121,7 @@ header {
   width: auto;
 }
 
-/* ---------------------------
-   Navigation tabs
---------------------------- */
+/* Navigation */
 .nav-tabs {
   list-style: none;
   display: flex;
@@ -159,7 +147,7 @@ header {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
-  letter-spacing: 0.01em; /* Added letter-spacing */
+  letter-spacing: 0.01em;
 }
 
 .nav-tabs li a:hover {
@@ -172,9 +160,7 @@ header {
   color: #fff;
 }
 
-/* ---------------------------
-   Hamburger Menu
---------------------------- */
+/* Hamburger */
 .menu-toggle {
   display: none;
 }
@@ -191,9 +177,7 @@ header {
   display: block;
 }
 
-/* ---------------------------
-   Mobile Navigation Menu
---------------------------- */
+/* Mobile Menu */
 .mobile-nav {
   display: none;
   position: fixed;
@@ -242,9 +226,7 @@ header {
   color: #fff;
 }
 
-/* ---------------------------
-   Hero section
---------------------------- */
+/* Hero */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -276,10 +258,7 @@ header {
   border-radius: 0;
 }
 
-
-/* ---------------------------
-   Hero section alt
---------------------------- */
+/* Hero Alt */
 .hero-alt {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -307,11 +286,7 @@ header {
   border-radius: 0;
 }
 
-
-
-/* ---------------------------
-   Buttons
---------------------------- */
+/* Buttons */
 .btn {
   display: inline-block;
   background-color: #ffa726;
@@ -322,16 +297,14 @@ header {
   text-decoration: none;
   margin-top: 1rem;
   transition: background-color 0.3s;
-  letter-spacing: 0.02em; /* Added letter-spacing */
+  letter-spacing: 0.02em;
 }
 
 .btn:hover {
   background-color: #e68a00;
 }
 
-/* ---------------------------
-   Content sections
---------------------------- */
+/* Content Sections */
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -341,7 +314,7 @@ header {
 }
 
 p.spaced {
-  margin-bottom: 1.5rem; /* Adjust the size as needed */
+  margin-bottom: 1.5rem;
 }
 
 .content.white {
@@ -352,8 +325,7 @@ p.spaced {
   background-color: #4caf50;
 }
 
-.content.grey,
-.content.F5F5F5 {
+.content.grey {
   background-color: #f5f5f5;
 }
 
@@ -361,16 +333,20 @@ p.spaced {
   padding: 3rem 6rem;
 }
 
+.content-noimg {
+  background-color: #fff;
+}
+
 .content-noimg article {
- text-align: left;
-padding: 6rem 6rem;
+  text-align: left;
+  padding: 6rem 6rem;
 }
 
 article ul {
-  list-style-position: inside; /* Makes bullets align with text */
+  list-style-position: inside;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  padding-left: 0; /* Remove default padding */
+  padding-left: 0;
 }
 
 .content figure {
@@ -394,9 +370,7 @@ article ul {
   direction: ltr;
 }
 
-/* ---------------------------
-   Reviews section
---------------------------- */
+/* Reviews */
 .reviews {
   background-color: #fff;
   padding: 4rem 8rem;
@@ -443,21 +417,43 @@ article ul {
   object-fit: cover;
 }
 
-/* ---------------------------
-   Form section
---------------------------- */
+/* Contact Form */
+#contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  min-height: 70vh;
+  min-width: 80vh;
+  background-color: #4caf50;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-container form {
+  flex: 1 1 400px;
+}
+
+.contact-container .contact-image {
+  flex: 1 1 300px;
+  max-width: 100%;
+  height: auto;
+}
+
 form fieldset {
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
-  padding: 1rem;
-  max-width: 400px;
+  padding: 2rem;
+  width: 70vw;
+  max-width: 1000px;
   margin: 0 auto;
-}
-
-legend {
-  font-weight: 600;
-  color: #2e7d32;
 }
 
 label {
@@ -466,7 +462,10 @@ label {
   text-align: left;
 }
 
-input[type="email"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -474,24 +473,87 @@ input[type="email"] {
   border-radius: 4px;
 }
 
-input[type="submit"] {
+.submit-label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 1rem;
+  pointer-events: auto;
+}
+
+.submit-label span {
+  display: inline-block;
   background-color: #ffa726;
   color: #212121;
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 9999px;
-  cursor: pointer;
   font-weight: 600;
   transition: opacity 0.3s;
+  cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.submit-label:hover span {
   opacity: 0.85;
 }
 
-/* ---------------------------
-   Footer
---------------------------- */
+#form-success:checked ~ main #contact .submit-label {
+  pointer-events: none;
+}
+
+/* Form Success States */
+#form-success {
+  display: none;
+}
+
+.hero-alt h1 .success-text {
+  display: none;
+}
+
+.success-button {
+  display: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#form-success:checked ~ main .hero-alt h1 .default-text {
+  display: none;
+}
+
+#form-success:checked ~ main .hero-alt h1 .success-text {
+  display: inline;
+}
+
+#form-success:checked ~ main .hero-alt p {
+  display: none;
+}
+
+#form-success:checked ~ main #contact {
+  display: none;
+}
+
+#form-success:checked ~ main .success-button {
+  display: block;
+  padding: 2rem 0;
+}
+
+#form-success:checked ~ main .success-button a {
+  display: inline-block;
+  background-color: #ffa726;
+  color: #212121;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  letter-spacing: 0.02em;
+}
+
+#form-success:checked ~ main .success-button a:hover {
+  background-color: #e68a00;
+}
+
+/* Footer */
 footer {
   background-color: #fff;
   color: #212121;
@@ -534,10 +596,8 @@ footer p {
   margin: 0;
 }
 
-/* ---------------------------
-   Responsive - Tablet
---------------------------- */
-@media (max-width: 992px) {
+/* === MOBILE (≤768px) === */
+@media (max-width: 768px) {
   .hamburger-menu {
     display: block;
   }
@@ -598,21 +658,42 @@ footer p {
   }
 
   .content article {
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+
+  .content-noimg article {
+    padding: 2rem 1.5rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 
   .reviews {
     padding: 3rem 2rem;
   }
-}
 
-/* ---------------------------
-   Responsive - Mobile
---------------------------- */
-@media (max-width: 480px) {
-  .btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+  .contact-image {
+    display: none;
+  }
+
+  #contact {
+    flex-direction: column;
+    min-width: auto;
+  }
+
+  form fieldset {
+    width: 95vw;
+    padding: 1rem;
   }
 
   footer {
